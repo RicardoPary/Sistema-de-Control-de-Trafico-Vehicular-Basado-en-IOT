@@ -1,0 +1,117 @@
+<div class="container-fluid display-table">
+  <div class="row display-table-row">
+
+    <!--side menu-->
+    <div class="col-md-2 display-table-cell valign-top col-sm-1 hidden-xs-down" id="side-menu">
+      <!-- <img src="../assets/autos/Ricardo.jpg" width="130" height="106" class="img-thumbnail rounded-circle hidden-xs-down hidden-sm-down hidden-md-down hidden-lg-down" style="margin:20px;"/> -->
+      <h1>Navigation</h1>
+      <ul class="nav flex-column">
+        
+        <li class="link active">
+          <a routerLink="/admin">
+            <i class="fa fa-windows" aria-hidden="true"></i>
+            <span class="hidden-xs-down hidden-sm-down hidden-md-down">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="link">
+          <a href="#collapse-comments" data-toggle="collapse" aria-controls="collapse-comments">
+            <i class="fa fa-database" aria-hidden="true"></i>
+            <span class="hidden-xs-down hidden-sm-down hidden-md-down">Comenters</span>
+            <span class="badge badge-danger pull-right hidden-xs-down hidden-sm-down hidden-md-down hidden-lg-down">20</span>
+          </a>
+          <ul class="collapse collapseable" id="collapse-comments">
+            <li><a routerLink="/tareas">Semaphores</a></li>
+            <li><a routerLink="/contactos">Multas</a></li>
+            <li><a routerLink="/flujos">Flujos</a></li>
+            <li><a routerLink="/semaforos">Grupos</a></li>
+            <li><a routerLink="/maps">Mapa</a></li>
+            <li><a routerLink="/flujohistorial">Historial Flujo</a></li>
+            <li><a routerLink="/multashistorial">Historial Multas</a></li>
+          </ul>
+          </li>
+
+        <li class="link">
+          <a href="#collapse-comments2" data-toggle="collapse" aria-controls="collapse-comments2">
+            <i class="fa fa-car" aria-hidden="true"></i>	
+            <span class="hidden-xs-down hidden-sm-down hidden-md-down">Tags</span>
+            <span class="badge badge-danger pull-right hidden-xs-down hidden-sm-down hidden-md-down hidden-lg-down">20</span>
+          </a>
+          <ul class="collapse collapseable" id="collapse-comments2">       
+            <li><a routerLink="/contactos">Contacts</a></li>         
+          </ul>
+        </li>
+
+        <li class="link">
+          <a href="#collapse-contaminations" data-toggle="collapse" aria-controls="collapse-contaminations">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="hidden-xs-down hidden-sm-down hidden-md-down">Contaminations</span>
+            <span class="badge badge-danger pull-right hidden-xs-down hidden-sm-down hidden-md-down hidden-lg-down">20</span>
+          </a>
+          <ul class="collapse collapseable" id="collapse-contaminations">
+            <li><a routerLink="/autos">Graphics</a></li>
+            <li><a routerLink="/contaminacion">Table Contamination</a></li>
+          </ul>
+        </li>
+
+        
+      </ul>
+
+    </div>
+
+    <!--main content area-->
+    <div class="col-md-10 display-table-cell valign-top box">
+        <header id="nav-header" class="clearfix" class="row">
+
+            <div class="col-md-5">
+              <input type="text" class="header-search-field hidden-sm-down hidden-xs-down hidden-lg-down" placeholder="Search for something..." id="header-search-field">
+            </div>
+
+            <div class="col-md-7">
+              <ul class="pull-right">
+              
+                <li id="welcome" class="hidden-xs-down">Welcome to your administration area</li>
+                
+                <li class="fixed-width">
+                <a href="">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-warning pull-right">20</span>
+                </a>
+                </li>
+
+                <li class="fixed-width">
+                <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger pull-right">20</span>
+                </a>
+                </li>
+
+                <li>
+                <a href="" class="logout">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> 
+                log out
+                </a>
+                </li>
+
+              </ul>
+            </div>
+
+        </header>
+      
+      <div style="background-color: #F7F7F7">
+          <router-outlet></router-outlet>
+      </div>        
+         
+
+      <div class="row" >
+        <footer id="admin-footer" class="clearfix">
+          <div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+          <div class="pull-right">admin system</div>
+        </footer>
+      </div>   
+    
+      </div>
+
+      </div>
+
+</div>

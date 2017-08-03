@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+    font-family: "open sans","Helvetica Neue",Helvetica,Arial, sans-serif;
+    background-color: #f3f3f4;
+    color: #676a6c;
+    height: 100%;
+}
